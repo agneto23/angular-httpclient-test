@@ -1,7 +1,10 @@
 {
   "name": "angular-test-httpclient",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
+    "version": "echo $npm_package_version",
+    "name": "echo $npm_package_name",
+    "dockerRegistry": "echo $npm_package_publishConfig_dockerRegistry",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -10,6 +13,10 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "publishConfig": {
+    "registry": "https://cdnxpro.pronaca.com/repository/npm-internal/",
+    "dockerRegistry": "cddnpro.pronaca.com"
+  },
   "dependencies": {
     "@angular/animations": "~10.0.9",
     "@angular/common": "~10.0.9",
