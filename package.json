@@ -1,5 +1,5 @@
 {
-  "name": "angular-httpclient-test",
+  "name": "angular-test-httpclient",
   "version": "1.0.0",
   "scripts": {
     "version": "echo $npm_package_version",
