@@ -10,6 +10,8 @@ import {User} from "../model/user";
 export class AppComponent {
   title = 'angular-test-httpclient';
 
+  testPrueba = 'test'
+
   constructor(private apiTestService: ApiTestService) {
   }
 
@@ -23,10 +25,65 @@ export class AppComponent {
     user.firstName = "test"
     user.lastName = "lastname"
 
+    const numero = 23 + 23;
+
     this.apiTestService.createUser(user).subscribe((res)=>{
       console.log(res);
     });
+
+
+    if (user) {
+
+    }
+
+    if (user) {
+
+    }
+
+    if (user) {
+
+    }
+
+    if (user) {
+
+    }
+
+    if (user) {
+
+    }
+
+    if (user) {
+
+    }
+
+    if (user) {
+
+    }
+
+    if (user) {
+
+    }
+
+    if (user) {
+
+    }
+
+    if (user.lastName == 'howdy') {
+
+    }
+
+    if (user) {
+      this.doSomething()
+    }
+
   }
+
+  doSomething() {
+    for (let i = 0; i < 4; i++) {    // Noncompliant, 4 is a magic number
+      console.log(i)
+    }
+  }
+
 
   getUsers() {
     this.apiTestService.getUsers().subscribe((res)=>{

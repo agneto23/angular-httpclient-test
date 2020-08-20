@@ -12,6 +12,11 @@ export class ApiTestService {
   constructor(private httpClient: HttpClient) {}
 
   public createUser(user: User){
+
+    if (user.lastName == 'howdy') {
+
+    }
+
     return this.httpClient.post(`${this.apiURL}/createUser/`,user);
   }
 
